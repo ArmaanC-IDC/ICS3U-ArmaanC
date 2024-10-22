@@ -2,10 +2,15 @@ package day2;
 
 public class Driver {
     public static void main(String[] args) {
-        Student student1 = new Student("Bob", 18, "58295829", 3.5, "Computer Science", 2025, true);
-        Student student2 = new Student("Alice", 15, "48395739", 4.0, "Mechanical Engineering", 2027, false);
+        //create student classes using Type Name = new Constructor(methods)
+        Student Bob = new Student("Bob", 15, "58295829", 4.0, "Computer Science", 2027, true);
+        Student Alice = new Student("Alice", 15, "48395739", 4.0, "Computer Science", 2027, true);
 
-        String info1 = student1.getInfo();
+        //get and print info from Bob, using the method getInfo()
+        String info1 = Bob.getInfo();
         System.out.println(info1);
+
+        //cannot access instance variables from outside the class, only methods
+        // System.out.println(Alice.age);
     }
 }
