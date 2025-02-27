@@ -17,19 +17,11 @@ public class SelectionSort {
             int currentNum = array[sortedSectionLength];
 
             int i;
-            for (i = sortedSectionLength-1; i>=0 && array[i] > currentNum; i--) {
-                if (array[i]>currentNum){
-                    array[i+1] = array[i];
-                }
+            for (i = sortedSectionLength-1; i >= 0 && array[i]>currentNum; i--) {
+                array[i+1] = array[i];
             }
             array[i+1] = currentNum;
-
-            for (int num : array) {
-                System.out.print(num + " ");
-            }
-            System.out.println();
             sortedSectionLength++;
         }
-    }
-    
+    }    
 }
